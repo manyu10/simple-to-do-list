@@ -1,38 +1,59 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #333;
+}
+
+.container{
+  display: table;
+  background-color: rgb(7, 101, 48);
+  align-items: center;
+  border-radius: 1px;
+  border: 2px solid rgb(9, 92, 38);
+   position:fixed;
+   top: 35px;
+   left: 600px;
+   padding: 10px 10px
+}
+
+.input-container{
+  display: flex;
+  justify-content: center;
+  padding: 5px 15px
+}
+
+.input-task{
+  background-color: rgb(176, 230, 199);
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.addbutton{
+  background-color:rgb(49, 47, 47) ;
+  color:rgb(255, 255, 255);
+  border: none;
+  padding: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.list-item{
+  display:flex;
+  justify-content: space-between;
+  text-align: center; 
+  border-radius: 5px;
+  background-color:rgb(80, 152, 111) ;
+  border: 1px solid rgb(3, 78, 22);
+  padding: 5px 7px 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.list-container{
+  padding: 2px 15px ;
+ 
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.del-button{
+  background-color:rgb(49, 47, 47) ;
+  color:rgb(255, 255, 255);
+  
+ 
 }
